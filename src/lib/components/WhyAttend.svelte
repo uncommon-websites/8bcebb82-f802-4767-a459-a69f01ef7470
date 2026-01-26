@@ -1,84 +1,77 @@
 <script lang="ts">
-  import { Pause, Volume2 } from 'lucide-svelte';
+  import { TrendingUp, Users, DollarSign, Globe } from 'lucide-svelte';
 </script>
 
 <section class="py-20 px-6 max-w-[1400px] mx-auto border-t border-gray-200">
-  <h2 class="text-[clamp(2.5rem,5vw,4rem)] leading-none font-medium mb-16 text-[#110F28]">Why attend</h2>
+  <h2 class="text-[clamp(2.5rem,5vw,4rem)] leading-none font-medium mb-16 text-[#110F28]">Our impact</h2>
 
-  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-    <!-- Left Content -->
-    <div class="lg:col-span-5 flex flex-col gap-16">
-      
-      <!-- Item 1 -->
-      <div>
-        <h3 class="text-xl font-medium mb-3 text-[#110F28]">See what's next in payments and commerce</h3>
-        <p class="text-sm leading-relaxed text-gray-600">
-          Head to the main stage to see our biggest product announcements live, hear from renowned business leaders, and explore what's next for global commerce as AI-native models, agentic commerce, and crypto reshape how business gets done.
-        </p>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+    <!-- Stat 1 -->
+    <div class="bg-white p-8 rounded-2xl border border-gray-100">
+      <div class="w-12 h-12 rounded-full bg-[#110F28] flex items-center justify-center mb-6">
+        <TrendingUp size={24} class="text-white" />
       </div>
-
-      <!-- Item 2 -->
-      <div>
-        <h3 class="text-xl font-medium mb-3 text-[#110F28]">Learn how to meet the trends impacting your business</h3>
-        <p class="text-sm leading-relaxed text-gray-600 mb-4">
-          Build your own agenda of breakout talks covering the next wave of revenue models, AI-powered payment optimizations, designing exceptional customer experiences, and more. Whether you're a newcomer or experienced practitioner, you'll find talks that match your expertise.
-        </p>
-      </div>
-
-      <!-- Item 3 -->
-      <div>
-        <h3 class="text-xl font-medium mb-3 text-[#110F28]">Expand your skills with training and certification</h3>
-        <p class="text-sm leading-relaxed text-gray-600 mb-3">Topics:</p>
-        <ul class="list-disc pl-5 text-sm leading-relaxed text-gray-600 space-y-1 mb-4">
-          <li>Increasing conversion and lowering network costs</li>
-          <li>Fighting fraud and managing disputes</li>
-          <li>Building your recurring revenue engine</li>
-          <li>Establishing your vertical SaaS platform</li>
-          <li>Increasing the global reach of your business with stablecoins</li>
-          <li>Developing an AI agent-ready checkout experience</li>
-        </ul>
-        <p class="text-sm leading-relaxed text-gray-600">
-          Included: On-site certification exams and hands-on workrooms (Wednesday and Thursday)
-        </p>
-      </div>
-
-      <!-- Training Box -->
-      <div class="bg-gray-100 p-4 rounded-lg flex items-center justify-between group cursor-pointer hover:bg-gray-200 transition-colors">
-        <div>
-          <p class="text-xs font-medium text-[#110F28]">Add training to your</p>
-          <p class="text-xs font-medium text-[#110F28]">conference pass at checkout.</p>
-          <p class="text-xs text-[#635bff] mt-1 group-hover:underline">Learn more</p>
-        </div>
-        <div class="w-6 h-6 rounded-full bg-gray-300 flex items-center justify-center">
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-600"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-        </div>
-      </div>
-
-      <hr class="border-gray-200" />
-
-      <!-- Item 4 -->
-      <div>
-        <h3 class="text-xl font-medium mb-3 text-[#110F28]">Make new connections in the expo hall</h3>
-        <p class="text-sm leading-relaxed text-gray-600">
-          Meet our partners and discover tools that extend Stripe's capabilities through demos and talks. Between sessions, join focused meetups to share ideas with peers, find opportunities to solve business challenges, and connect with the Stripe community that supports you year-round.
-        </p>
-      </div>
-
+      <h3 class="text-4xl font-medium text-[#110F28] mb-2">8,000+</h3>
+      <p class="text-sm text-gray-600">Creative entrepreneurs served across East Africa</p>
     </div>
 
-    <!-- Right Content (Visual) -->
-    <div class="lg:col-span-7 relative min-h-[600px] bg-[#110F28] rounded-sm overflow-hidden">
-      <!-- Placeholder for abstract visual/video -->
-      <div class="absolute inset-0 bg-gradient-to-br from-[#110F28] to-[#2E1153]"></div>
-      
-      <!-- Controls -->
-      <div class="absolute bottom-6 right-6 flex gap-2">
-        <button class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white hover:bg-white/20 transition-colors">
-          <Pause size={16} />
-        </button>
-        <button class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white hover:bg-white/20 transition-colors">
-          <Volume2 size={16} />
-        </button>
+    <!-- Stat 2 -->
+    <div class="bg-white p-8 rounded-2xl border border-gray-100">
+      <div class="w-12 h-12 rounded-full bg-[#110F28] flex items-center justify-center mb-6">
+        <Users size={24} class="text-white" />
+      </div>
+      <h3 class="text-4xl font-medium text-[#110F28] mb-2">10,000+</h3>
+      <p class="text-sm text-gray-600">Emerging businesses impacted in Kenya and Uganda</p>
+    </div>
+
+    <!-- Stat 3 -->
+    <div class="bg-white p-8 rounded-2xl border border-gray-100">
+      <div class="w-12 h-12 rounded-full bg-[#110F28] flex items-center justify-center mb-6">
+        <DollarSign size={24} class="text-white" />
+      </div>
+      <h3 class="text-4xl font-medium text-[#110F28] mb-2">$50M+</h3>
+      <p class="text-sm text-gray-600">Economic value generated for Africa's creative sectors</p>
+    </div>
+
+    <!-- Stat 4 -->
+    <div class="bg-white p-8 rounded-2xl border border-gray-100">
+      <div class="w-12 h-12 rounded-full bg-[#110F28] flex items-center justify-center mb-6">
+        <Globe size={24} class="text-white" />
+      </div>
+      <h3 class="text-4xl font-medium text-[#110F28] mb-2">$76B</h3>
+      <p class="text-sm text-gray-600">African events market by 2028 at 6% annual growth</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <!-- Left Content -->
+    <div>
+      <h3 class="text-2xl font-medium mb-6 text-[#110F28]">Democratizing access to creative financing</h3>
+      <p class="text-base leading-relaxed text-gray-600 mb-6">
+        Since 2015, we've been on a mission to empower Africa's creative economy. Through MOOKH's platform and ACEF's innovative financing, we're breaking down barriers that have kept talented event organizers from accessing the capital they need to grow.
+      </p>
+      <p class="text-base leading-relaxed text-gray-600 mb-6">
+        Our receivables-backed financing model replaces traditional credit requirements with performance-based eligibility, opening doors for youth-led enterprises and emerging talent who lack access to conventional banking.
+      </p>
+      <div class="bg-gray-100 p-6 rounded-lg">
+        <p class="text-sm font-medium text-[#110F28] mb-2">World's first achievement</p>
+        <p class="text-sm text-gray-600">
+          ACEF represents the world's first tokenized creative industry bond, positioning us as pioneers in combining blockchain technology with creative industry financing.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="bg-[#110F28] rounded-2xl p-12 text-white flex flex-col justify-center">
+      <blockquote class="text-xl leading-relaxed mb-6">
+        "We're not just providing loans—we're building infrastructure that enables Africa's creative economy to thrive. Every event funded is a step toward economic empowerment for the next generation."
+      </blockquote>
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-full bg-white/10"></div>
+        <div>
+          <p class="font-medium">Eric Thimba</p>
+          <p class="text-sm text-white/70">CEO & Co-Founder, ACEF</p>
+        </div>
       </div>
     </div>
   </div>

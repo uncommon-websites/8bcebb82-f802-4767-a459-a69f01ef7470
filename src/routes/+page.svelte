@@ -10,13 +10,18 @@
   import Footer from "$lib/components/Footer.svelte";
 </script>
 
-<main class="bg-[#F7F7F8] min-h-screen font-sans text-[#110F28] selection:bg-[#635bff] selection:text-white">
+<svelte:head>
+  <title>ACEF - Fueling Africa's New Generation of Creators</title>
+  <meta name="description" content="ACEF delivers upfront event capital via receivables-backed loans secured by MOOKH's automated ticket sales platform. World's first tokenized creative industry bond." />
+</svelte:head>
+
+<main class="bg-[#F7F7F8] min-h-screen font-sans text-[#110F28] selection:bg-[#110F28] selection:text-white">
   <Header />
   <Hero />
   <WhyAttend />
+  <Agenda />
   <Passes />
   <Speakers />
-  <Agenda />
   <Sponsors />
   <FAQ />
   <Footer />
